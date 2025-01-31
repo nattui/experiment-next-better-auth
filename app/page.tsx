@@ -1,6 +1,8 @@
+"use client"
+
 import Button from "@/components/ui/button"
 
-export default async function RootPage() {
+export default function RootPage() {
   return (
     <div>
       <h1 className="text-3xl font-bold underline">Hello World</h1>
