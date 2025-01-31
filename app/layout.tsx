@@ -25,7 +25,7 @@ export const viewport: Viewport = {
   width: "device-width",
 }
 
-export default function GlobalLayout({ children }: PropsWithChildren) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>

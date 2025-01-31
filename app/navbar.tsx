@@ -17,6 +17,13 @@ export default function Navbar() {
         data-active={pathname === "/"}
         href="/"
       >
+        Root
+      </Link>
+      <Link
+        className="font-500 data-[active=true]:text-primary-a11 hover:underline data-[active=true]:underline"
+        data-active={pathname === "/home"}
+        href="/home"
+      >
         Home
       </Link>
 

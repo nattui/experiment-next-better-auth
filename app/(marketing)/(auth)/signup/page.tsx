@@ -1,4 +1,4 @@
-import SignUpForm from "@/app/(marketing)/signup/form"
+import SignUpForm from "@/app/(marketing)/(auth)/signup/form"
 import { auth } from "@/utils/auth"
 import { headers } from "next/headers"
 import { redirect } from "next/navigation"
