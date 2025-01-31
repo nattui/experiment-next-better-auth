@@ -1,6 +1,6 @@
 "use client"
 
-import ButtonSignOut from "@/app/button-sign-out"
+import ButtonSignOut from "@/components/button-sign-out"
 import { authClient } from "@/utils/auth/auth-client"
 import Link from "next/link"
 import { usePathname } from "next/navigation"

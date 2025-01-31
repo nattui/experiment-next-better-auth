@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react"
-import Navbar from "@/app/navbar"
+import Navbar from "@/components/navbar"
 
 export default function ShellMarketing({ children }: PropsWithChildren) {
   return (

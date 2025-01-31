@@ -1,4 +1,4 @@
-import ShellMarketing from "@/app/shell-marketing"
+import ShellMarketing from "@/components/shell-marketing"
 
 export default function HomeMarketingPage() {
   return (

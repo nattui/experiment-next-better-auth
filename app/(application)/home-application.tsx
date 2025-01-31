@@ -1,4 +1,4 @@
-import ShellApplication from "@/app/shell-application"
+import ShellApplication from "@/components/shell-application"
 
 export default function HomeApplicationPage() {
   return (
