@@ -8,7 +8,10 @@
   "dependencies": {
     "@nattui/tailwind-tokenless": "0.0.0-alpha.10",
     "@phosphor-icons/react": "^2.1.7",
+    "better-auth": "^1.1.15",
+    "drizzle-orm": "^0.39.1",
     "next": "^15.1.6",
+    "postgres": "^3.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -18,6 +21,7 @@
     "@types/node": "^20.17.16",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
+    "drizzle-kit": "^0.30.4",
     "eslint": "^9.19.0",
     "eslint-config-next": "^15.1.6",
     "eslint-config-prettier": "^10.0.1",
