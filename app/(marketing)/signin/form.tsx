@@ -25,7 +25,7 @@ export default function SignInForm() {
           setIsLoading(true)
         },
         onSuccess: () => {
-          router.refresh()
+          router.push("/")
         },
       },
     )

@@ -27,7 +27,7 @@ export default function SignUpForm() {
           setIsLoading(true)
         },
         onSuccess: () => {
-          router.refresh()
+          router.push("/")
         },
       },
     )
