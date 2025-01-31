@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react"
-import ShellMarketing from "@/components/shell-marketing"
+import ShellMarketing from "@/app/(marketing)/shell"
 
 export default function MarketingLayout({ children }: PropsWithChildren) {
   return <ShellMarketing>{children}</ShellMarketing>

@@ -1,11 +1,11 @@
-import ShellMarketing from "@/components/shell-marketing"
+import MarketingShell from "@/app/(marketing)/shell"
 
-export default function HomeMarketingPage() {
+export default function MarketingHomePage() {
   return (
-    <ShellMarketing>
+    <MarketingShell>
       <div className="flex h-screen flex-col items-center justify-center">
         <h1 className="text-20">Marketing Home</h1>
       </div>
-    </ShellMarketing>
+    </MarketingShell>
   )
 }
