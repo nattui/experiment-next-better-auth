@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next"
 import type { PropsWithChildren } from "react"
-import Navbar from "@/app/navbar"
 import "@/styles/global.css"
 import { Geist, Geist_Mono } from "next/font/google"
 
@@ -26,11 +25,10 @@ export const viewport: Viewport = {
   width: "device-width",
 }
 
-export default function RootLayout({ children }: PropsWithChildren) {
+export default function GlobalLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
         {children}
       </body>
     </html>
