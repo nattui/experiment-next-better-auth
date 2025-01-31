@@ -2,9 +2,13 @@
 
 import Button from "@/components/ui/button"
 import { authClient } from "@/utils/auth/auth-client"
+import { useState } from "react"
 
 export default function RootPage() {
+  const [isLoading, setIsLoading] = useState(false)
+
   async function signUp() {
+    setIsLoading(true)
     await authClient.signUp.email(
       {
         email: "test@example.com",
@@ -23,12 +27,20 @@ export default function RootPage() {
         },
       },
     )
+    setIsLoading(false)
   }
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center">
-      <h1 className="text-20 mb-8">Sign up</h1>
-      <Button onClick={signUp}>Click me</Button>
+    <div className="mx-auto flex h-screen w-full max-w-256 flex-col items-center justify-center">
+      <h1 className="text-20 mb-8">Create an account</h1>
+      <Button
+        fullWidth
+        isLoading={isLoading}
+        onClick={signUp}
+        size="extraLarge"
+      >
+        Sign up
+      </Button>
     </div>
   )
 }
