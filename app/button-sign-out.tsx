@@ -14,8 +14,8 @@ export default function ButtonSignOut() {
     await authClient.signOut({
       fetchOptions: {
         onError: (context) => {
-          setIsLoading(false)
           alert(context.error.message)
+          setIsLoading(false)
         },
         onRequest: () => {
           setIsLoading(true)

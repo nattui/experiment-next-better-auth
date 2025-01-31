@@ -18,8 +18,8 @@ export default function SignInForm() {
       },
       {
         onError: (context) => {
-          setIsLoading(false)
           alert(context.error.message)
+          setIsLoading(false)
         },
         onRequest: () => {
           setIsLoading(true)
