@@ -1,0 +1,169 @@
+/* Order matters */
+@import "tailwindcss";
+@import "@nattui/tailwind-tokenless/styles/10/index.css";
+@import "@nattui/tailwind-tokenless/styles/colors/reset.css";
+@import "@nattui/tailwind-tokenless/styles/colors/gray/mauve.css";
+@import "@nattui/tailwind-tokenless/styles/colors/gray/mauve-alpha.css";
+@import "@nattui/tailwind-tokenless/styles/colors/primary/crimson.css";
+@import "@nattui/tailwind-tokenless/styles/colors/primary/crimson-alpha.css";
+
+/* @theme {
+  --color-*: initial;
+  --color-gray-1: var(--color-gray-1);
+  --color-gray-2: var(--color-gray-2);
+  --color-gray-3: var(--color-gray-3);
+  --color-gray-4: var(--color-gray-4);
+  --color-gray-5: var(--color-gray-5);
+  --color-gray-6: var(--color-gray-6);
+  --color-gray-7: var(--color-gray-7);
+  --color-gray-8: var(--color-gray-8);
+  --color-gray-9: var(--color-gray-9);
+  --color-gray-10: var(--color-gray-10);
+  --color-gray-11: var(--color-gray-11);
+  --color-gray-12: var(--color-gray-12);
+  --color-gray-a1: var(--color-gray-a1);
+  --color-gray-a2: var(--color-gray-a2);
+  --color-gray-a3: var(--color-gray-a3);
+  --color-gray-a4: var(--color-gray-a4);
+  --color-gray-a5: var(--color-gray-a5);
+  --color-gray-a6: var(--color-gray-a6);
+  --color-gray-a7: var(--color-gray-a7);
+  --color-gray-a8: var(--color-gray-a8);
+  --color-gray-a9: var(--color-gray-a9);
+  --color-gray-a10: var(--color-gray-a10);
+  --color-gray-a11: var(--color-gray-a11);
+  --color-gray-a12: var(--color-gray-a12);
+}
+
+@layer base {
+  :root {
+    --color-gray-1: #fdfcfd;
+    --color-gray-2: #faf9fb;
+    --color-gray-3: #f2eff3;
+    --color-gray-4: #eae7ec;
+    --color-gray-5: #e3dfe6;
+    --color-gray-6: #dbd8e0;
+    --color-gray-7: #d0cdd7;
+    --color-gray-8: #bcbac7;
+    --color-gray-9: #8e8c99;
+    --color-gray-10: #84828e;
+    --color-gray-11: #65636d;
+    --color-gray-12: #211f26;
+    --color-gray-a1: #55005503;
+    --color-gray-a2: #2b005506;
+    --color-gray-a3: #30004010;
+    --color-gray-a4: #20003618;
+    --color-gray-a5: #20003820;
+    --color-gray-a6: #14003527;
+    --color-gray-a7: #10003332;
+    --color-gray-a8: #08003145;
+    --color-gray-a9: #05001d73;
+    --color-gray-a10: #0500197d;
+    --color-gray-a11: #0400119c;
+    --color-gray-a12: #020008e0;
+  }
+
+  .dark {
+    --color-gray-1: #121113;
+    --color-gray-2: #1a191b;
+    --color-gray-3: #232225;
+    --color-gray-4: #2b292d;
+    --color-gray-5: #323035;
+    --color-gray-6: #3c393f;
+    --color-gray-7: #49474e;
+    --color-gray-8: #625f69;
+    --color-gray-9: #6f6d78;
+    --color-gray-10: #7c7a85;
+    --color-gray-11: #b5b2bc;
+    --color-gray-12: #eeeef0;
+    --color-gray-a1: #00000000;
+    --color-gray-a2: #f5f4f609;
+    --color-gray-a3: #ebeaf814;
+    --color-gray-a4: #eee5f81d;
+    --color-gray-a5: #efe6fe25;
+    --color-gray-a6: #f1e6fd30;
+    --color-gray-a7: #eee9ff40;
+    --color-gray-a8: #eee7ff5d;
+    --color-gray-a9: #eae6fd6e;
+    --color-gray-a10: #ece9fd7c;
+    --color-gray-a11: #f5f1ffb7;
+    --color-gray-a12: #fdfdffef;
+  }
+} */
+
+@layer base {
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--color-gray-2);
+    color: var(--color-gray-11);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-gray-12);
+    font-weight: 500;
+    font-family: var(--font-display);
+    font-feature-settings: "ss04";
+  }
+
+  button {
+    font-weight: 500;
+  }
+
+  b,
+  strong {
+    font-weight: 500;
+  }
+
+  a {
+    font-family: var(--font-sans);
+  }
+
+  code {
+    font-family: var(--font-mono);
+  }
+
+  /*
+    Enhance heading quality and legibility
+  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  /*
+    Avoid a short single word on the last line
+  */
+  p {
+    text-wrap: pretty;
+  }
+
+  /*
+    Avoid text overflows
+  */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    overflow-wrap: break-word;
+  }
+}

@@ -1,0 +1,96 @@
+.base {
+  --size: 16px;
+  position: relative;
+  scale: -1 1;
+  animation: spinner 1000ms steps(12, end) infinite;
+  width: var(--size);
+  height: var(--size);
+}
+
+@keyframes spinner {
+  to {
+    rotate: 1turn;
+  }
+}
+
+.base > div {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform-origin: center left;
+  translate: 0 -50%;
+  transition: all 150ms;
+  width: calc(var(--size) / 2);
+  height: calc(var(--size) / 12);
+  pointer-events: none;
+}
+
+.base > div::after {
+  position: absolute;
+  right: 0;
+  border-radius: 9999px;
+  background-color: currentColor;
+  width: 50%;
+  height: 100%;
+  content: "";
+}
+
+.base > div:nth-child(1) {
+  rotate: 0deg;
+  opacity: 1;
+}
+
+.base > div:nth-child(2) {
+  rotate: 30deg;
+  opacity: 0.925;
+}
+
+.base > div:nth-child(3) {
+  rotate: 60deg;
+  opacity: 0.85;
+}
+
+.base > div:nth-child(4) {
+  rotate: 90deg;
+  opacity: 0.775;
+}
+
+.base > div:nth-child(5) {
+  rotate: 120deg;
+  opacity: 0.7;
+}
+
+.base > div:nth-child(6) {
+  rotate: 150deg;
+  opacity: 0.625;
+}
+
+.base > div:nth-child(7) {
+  rotate: 180deg;
+  opacity: 0.55;
+}
+
+.base > div:nth-child(8) {
+  rotate: 210deg;
+  opacity: 0.475;
+}
+
+.base > div:nth-child(9) {
+  rotate: 240deg;
+  opacity: 0.4;
+}
+
+.base > div:nth-child(10) {
+  rotate: 270deg;
+  opacity: 0.325;
+}
+
+.base > div:nth-child(11) {
+  rotate: 300deg;
+  opacity: 0.25;
+}
+
+.base > div:nth-child(12) {
+  rotate: 330deg;
+  opacity: 0.15;
+}
