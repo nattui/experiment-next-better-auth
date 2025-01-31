@@ -13,23 +13,22 @@ export default function Navbar() {
         Home
       </Link>
 
-      <div
-        className="flex items-center gap-x-16 transition-opacity"
-        style={{ opacity: isPending ? 0 : 1 }}
-      >
-        {session ? (
-          <ButtonSignOut />
-        ) : (
-          <>
-            <Link className="font-500 hover:underline" href="/signin">
-              Sign in
-            </Link>
-            <Link className="font-500 hover:underline" href="/signup">
-              Sign up
-            </Link>
-          </>
-        )}
-      </div>
+      {!isPending && (
+        <div className="flex items-center gap-x-16">
+          {session ? (
+            <ButtonSignOut />
+          ) : (
+            <>
+              <Link className="font-500 hover:underline" href="/signin">
+                Sign in
+              </Link>
+              <Link className="font-500 hover:underline" href="/signup">
+                Sign up
+              </Link>
+            </>
+          )}
+        </div>
+      )}
     </div>
   )
 }
