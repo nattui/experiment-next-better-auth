@@ -1,27 +1,35 @@
 "use client"
+
 import ButtonSignOut from "@/app/button-sign-out"
 import { authClient } from "@/utils/auth/auth-client"
 import Link from "next/link"
 
 export default function Navbar() {
-  const { data: session } = authClient.useSession()
+  const { data: session, isPending } = authClient.useSession()
 
   return (
-    <div className="flex items-center gap-x-8 p-64">
+    <div className="absolute top-0 flex h-144 items-center gap-x-16 px-64">
       <Link className="font-500 hover:underline" href="/">
         Home
       </Link>
-      {!session && (
-        <>
-          <Link className="font-500 hover:underline" href="/signin">
-            Sign in
-          </Link>
-          <Link className="font-500 hover:underline" href="/signup">
-            Sign up
-          </Link>
-        </>
-      )}
-      {session && <ButtonSignOut />}
+
+      <div
+        className="flex items-center gap-x-16 transition-opacity"
+        style={{ opacity: isPending ? 0 : 1 }}
+      >
+        {session ? (
+          <ButtonSignOut />
+        ) : (
+          <>
+            <Link className="font-500 hover:underline" href="/signin">
+              Sign in
+            </Link>
+            <Link className="font-500 hover:underline" href="/signup">
+              Sign up
+            </Link>
+          </>
+        )}
+      </div>
     </div>
   )
 }
