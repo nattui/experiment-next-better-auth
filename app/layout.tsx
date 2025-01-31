@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  description: "Experiment Next Kindle",
-  title: "Experiment Next Kindle",
+  description: "Experiment Next Better Auth Drizzle",
+  title: "Experiment Next Better Auth Drizzle",
 }
 
 export const viewport: Viewport = {

@@ -2,6 +2,7 @@
 
 import Button from "@/components/ui/button"
 import { authClient } from "@/utils/auth/auth-client"
+
 export default function RootPage() {
   async function signUp() {
     await authClient.signUp.email(
