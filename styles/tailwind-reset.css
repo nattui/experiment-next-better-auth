@@ -20,17 +20,6 @@
 }
 
 /*
-    Typographic tweaks
-    - Improve text rendering
-    - Add accessible line height
-*/
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
-}
-
-/*
     (Mobile) Disables additional non-standard gestures such as double-tap to zoom
 */
 html {
